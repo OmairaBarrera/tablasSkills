@@ -1,0 +1,43 @@
+body{
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+section{
+    background-image: url(/img/michi.png) ;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+table{
+    width: 70%;
+    background-color:rgb(235, 229, 221,0.7);
+    border-color: rgb(56, 150, 150);
+    border-style: ridge;
+    border-width: 10px;
+    margin:auto;
+}
+h2{
+    color:aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    letter-spacing: 15px;
+}
+th{
+    text-align: center;
+    border-bottom: 2px solid ;
+}
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+h1{
+    color: cornsilk;
+    text-align: center;
+    font-style: oblique;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 10px;
+    font-size: 50px;
+}
