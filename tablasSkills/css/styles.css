@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body{
-    background: #232526;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url("/tablasSkills/img/futurista.avif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 section{
-    background-image: url(/img/michi.png) ;
+    background-image: url(/tablasSkills/img/michi.png);
     background-repeat: no-repeat;
     background-position: right top;
-    background-attachment: fixed;
+}
+.img-footer{
+    width: 200px;
+    height: 200px;
 }
 table{
     width: 70%;
@@ -16,28 +22,55 @@ table{
     border-style: ridge;
     border-width: 10px;
     margin:auto;
+    cursor: pointer;
 }
-h2{
+
+h3{
     color:aliceblue;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Zeyada', cursive;
     font-style: italic;
-    letter-spacing: 15px;
+    letter-spacing: 20px;
+}
+tfoot{
+    background-image: url(/tablasSkills/img/disenadomichi.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
 }
 th{
     text-align: center;
-    border-bottom: 2px solid ;
+    border-bottom: 2px solid;
+    padding: 15px;
+    font-family: 'Zeyada', cursive;
+    font-size: 20px;
 }
 td {
-    padding: 8px;
+    padding: 15px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
-h1{
+tr{
+    transition: all ease 300ms;
+}
+tr:hover{
+    background-color:lavenderblush;
+}
+h1,h2{
     color: cornsilk;
     text-align: center;
-    font-style: oblique;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    letter-spacing: 10px;
-    font-size: 50px;
+    letter-spacing: 20px;
+    font: oblique bold 50px 'Mea Culpa', cursive;
+    background: linear-gradient(red, blue);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    animation: text 5s linear infinite;
+}
+@keyframes text{
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
 }
